@@ -39,15 +39,15 @@ class HashTable:
         return False
 
 
-# Тестуємо нашу оновлену хеш-таблицю:
+# Test our updated hash table:
 H = HashTable(5)
 H.insert("apple", 10)
 H.insert("orange", 20)
 H.insert("banana", 30)
 
-print(H.get("apple"))  # Виведе: 10
-print(H.get("orange"))  # Виведе: 20
-print(H.get("banana"))  # Виведе: 30
+print(H.get("apple"))  # Output: 10
+print(H.get("orange"))  # Output: 20
+print(H.get("banana"))  # Output: 30
 
-H.delete("orange")  # Видалимо пару "orange"-"20"
-print(H.get("orange"))  # Виведе: None, оскільки "orange" було видалено
+H.delete("orange")  # Delete the pair "orange"-"20"
+print(H.get("orange"))  # Output: None, as "orange" has been removed
