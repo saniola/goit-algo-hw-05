@@ -14,8 +14,8 @@ def binary_search(arr, target):
             high = mid - 1
 
     # If the element is not found, return the "upper bound" (the smallest element greater than or equal to the target)
-    if high >= 0 and high < len(arr):
-        return iterations, arr[high]
+    if low < len(arr):
+        return iterations, arr[low]
     else:
         return iterations, None
 
